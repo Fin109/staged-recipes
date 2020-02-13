@@ -39,8 +39,7 @@ requirements:
   build:
     # If your project compiles code (such as a C extension) then add the required compilers as separate entries here.
     # Compilers are named 'c', 'cxx' and 'fortran'.
-    - {{ compiler('c') }}
-  host:
+    host:
     - python
     - pip
     - scipy
@@ -55,16 +54,8 @@ test:
   # List all the packages/modules that `run_test.py` imports.
   imports:
     - gillespy2
-    - gillespy2.test_empty_model
-    - gillespy2.test_model
-    - gillespy2.test_ode_solver
-    - gillespy2.test_tau_hybrid_solver
-    - gillesyp2.test_simple_model
-    - gillesyp2.test_ssa_c_solver
-    - gillesyp2.test_SBML
-    - gillesyp2.test_all_solvers
+   
   requires:
-   - unittest
    
 about:
   home: https://github.com/GillesPy2/GillesPy2
@@ -78,7 +69,7 @@ about:
   # (even if the license doesn't require it) using the license_file entry.
   # See https://conda.pydata.org/docs/building/meta-yaml.html#license-file
   license_file: LICENSE.txt
-  summary: 'Simple, fast, extensible JSON encoder/decoder for Python'
+  summary: 'GillesPy2 is an open-source Python package for stochastic simulation of biochemical systems.'
 
   # The remaining entries in this section are optional, but recommended.
   description: |
@@ -92,5 +83,4 @@ extra:
   recipe-maintainers:
     # GitHub IDs for maintainers of the recipe.
     # Always check with the people listed below if they are OK becoming maintainers of the recipe. (There will be spam!)
-    - LisaSimpson
-    - LandoCalrissian
+    - Fin109
